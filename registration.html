@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+    <header>
+        <nav id="navigations">
+            <ul>
+                <a href="index.html"><li>ABOUT ME</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+                <a class="current" href="registration.html"><li>REGISTRATION</li></a>
+                <a href="login.html"><li>LOGIN</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" class="form">
+            <h1 id="heading">REGISTRATION FORM</h1>
+            <table>
+                <tr>                    
+                    <td colspan="2"><input type="text" name="fname" placeholder="FIRST NAME" required></td>
+                </tr>
+                <tr>                    
+                    <td colspan="2"><input type="text" name="lname" placeholder="LAST NAME" required></td>
+                </tr>
+                <tr>                    
+                    <td colspan="2"><input type="tel" name="pnumber" title="PHONE Number must be 11 digits" pattern="[0-9]{11}" placeholder="PHONE NUMBER" required></td>
+                </tr>
+                <tr>
+                    <th class="gender"><label for="gender">GENDER</label></th>
+                    <td>
+                        <select name="gender" id="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option  disabled selected>Choose your Gender</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>                    
+                    <td colspan="2"><input type="text" placeholder="COUNTRY" required></td>
+                </tr>
+                <tr>                    
+                    <td colspan="2"><input type="text" placeholder="STATE/PROVINCE" required></td>
+                </tr>
+                <tr>                    
+                    <td colspan="2"><input type="email" placeholder="EMAIL" required></td>
+                </tr>
+                <tr>                    
+                    <td colspan="2"><input type="password" placeholder="PASSWORD" title="Password must contain number, lowercase and uppercase letters, and must be above 8 characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td>
+                </tr>
+                <tr>                    
+                    <td colspan="2"><input type="password" placeholder="CONFIRM PASSWORD" required></td>
+                </tr>
+            </table>            
+            
+            <div class="btn">
+                <input type="submit" id="btn" value="REGISTER">
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <h5><em>(c) Copyright</em></h5>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <header>
+        <nav id="navigations">
+            <ul>
+                <a href="index.html"><li>ABOUT ME</li></a>
+                <a class="current" href="contact.html"><li>CONTACT</li></a>
+                <a href="registration.html"><li>REGISTRATION</li></a>
+                <a href="login.html"><li>LOGIN</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#">
+            <h1>YOUR DETAILS</h1>
+            <table>
+                <tr>
+                    <th><label>NAME</label></th>
+                    <td><input type="text" pattern="(?=.*[A-Z])(?=.*[a-z]).{1,}" title="Name must contain uppercase and lowercase letters" placeholder="NAME" required></td>
+                </tr>
+                <tr>
+                    <th><label>EMAIL</label></th>
+                    <td><input type="email" placeholder="website@example.com" required></td>
+                </tr>
+                <tr>
+                    <th>MESSAGE</th>
+                    <td rowspan="2"><textarea name="message" id="message">Drop a comment...</textarea></td>
+                </tr>
+                <tr>
+                    <th rowspan="2"></th>
+                </tr>
+            </table>
+
+            <input type="submit" class="btn">
+        </form>
+
+    </main>
+    <footer>
+        <h5><em>(c) Copyright</em></h5>
+    </footer>
+</body>
+</html>

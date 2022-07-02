@@ -1,0 +1,107 @@
+@import 'general.css';
+
+/* Home Main CSS */
+main{
+  background-color: var(--contentBoxColor);  
+  box-shadow: 0px 0px 20px 0px var(--headerColor);
+  display: flex;
+  border-radius: 20px;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 50px;  
+}
+
+main .about__me{  
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+main .about__me #my__pics{  
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .about__me img{  
+  width: 100%;  
+  border-radius: 10px;
+  margin: 30px 10px;
+}
+
+main .about__me #others{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;  
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+main .about__me #others h1{
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+main .about__me #others p{
+  font-size: 13px;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+main .about__me #others .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .about__me #others .cards .card{
+  background-color: var(--headerColor);
+  width: 160px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+main .about__me #others  .card h3{
+  color: var(--headerBkColor);
+}
+
+main .about__me #others .hobbies ul,
+main .about__me #others .priorities ul,
+main .about__me #others .other__skills ul{
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+/* Button */
+main .btn{  
+  height: 80px;
+  display: flex;
+  justify-content: center;  
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+main .btn button{
+  background-color: var(--headerBkColor);
+  color: var(--headerColor);
+  padding: 20px;
+  transition: var(--transition);
+  border-radius: 10px;
+  border: none;
+}
+
+main .btn button:hover{
+  background-color: var(--buttonHover);
+  color: var(--headerColor);
+  transition: var(--transition);
+  transform: var(--buttonTransform);
+  border: none;
+  cursor: pointer;
+}

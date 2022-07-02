@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+:root{
+  --headerBkColor: hsl(233, 80%, 28%);
+  --buttonHover: hsl(0, 17%, 3%);
+  --headerColor: hsl(240, 9%, 87%);
+  --mainBkColor: hsl(0, 0%, 73%);
+  --contentBoxColor: hsl(0, 0%, 80%);
+  --inputBkColor: hsl(0, 0%, 98%);
+
+  /* ANIMATION */
+  --buttonTransform: scale(0.97);
+  --transition: .3s;
+}
+
+body{
+    background-color: var(--mainBkColor);
+  }
+  
+  header {
+    background-color: var(--headerBkColor);
+    width: 100%;
+    padding: 2px;
+  }
+  
+  header #navigations {  
+    display: flex;
+  }
+  
+  header #navigations ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+  }
+
+  header #navigations ul a{
+      text-decoration: none;
+      border: solid 1px transparent;
+      margin: 2px;
+      transition: var(--transition);
+      color: var(--headerColor);
+  }
+
+  header #navigations ul a.current{
+    border: solid 1px var(--headerColor);
+  }
+
+  header #navigations ul a:hover{
+    background-color: var(--headerColor);
+    color: var(--headerBkColor);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  header #navigations ul a li {
+    display: flex;
+    margin: 15px;
+    text-decoration: none;
+  }
+
+  footer{
+    display: flex;
+    flex-flow: column;
+    margin: 50px 0px 20px 0px;
+    justify-content: center;
+    align-items: center;
+  }

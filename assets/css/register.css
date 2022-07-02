@@ -1,0 +1,91 @@
+@import 'general.css';
+
+/* Main CSS*/
+main{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/*Form Content CSS */
+main form{
+    background-color: var(--contentBoxColor);
+    box-shadow: 0px 0px 20px 0px var(--headerColor);
+    border: solid 3px var(--headerColor);
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+main form h1{
+    color: var(--headerBkColor);
+}
+
+main form table{
+    border-spacing: 0px 15px;
+    width: 100%;
+}
+
+main form #heading{
+    margin-bottom: 8%;
+}
+
+main form table tr th,
+main form table tr td{
+    font-size: 14px;
+    padding: 2px;
+}
+
+main form table tr td input{
+    background-color: var(--inputBkColor);
+    color: var(--buttonHover);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+main form table tr th.gender{
+    text-align: left;
+}
+main form table tr th label{
+    color: var(--headerBkColor);
+}
+
+main form table tr td select{
+    background-color: var(--inputBkColor);
+    color: var(--buttonHover);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+main form .btn{    
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+}
+
+main form .btn #btn{
+    background-color: var(--headerBkColor);
+    color: var(--headerColor);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: var(--transition);
+}
+
+main form .btn #btn:hover{
+    background-color: var(--buttonHover);
+    color: var(--headerColor);
+    transform: var(--buttonTransform);;
+    transition: var(--transition);
+}

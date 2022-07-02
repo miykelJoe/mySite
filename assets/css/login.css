@@ -1,0 +1,72 @@
+@import 'general.css';
+
+  /* Main Login CSS */
+  main{
+      background-color: var(--mainBkColor);      
+      display: flex;
+      flex-flow: column;      
+      justify-content: center;      
+      align-items: center;
+      padding: 15% 0 0 0;
+    }
+
+main form{
+    background-color: var(--contentBoxColor);
+    box-shadow: 0px 0px 20px 0px var(--headerColor);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+    
+main form h1{
+        display: flex;    
+        color: var(--headerBkColor);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;        
+    }
+
+main table{    
+    border-spacing: 15px;
+}
+    
+main table .login{
+    text-align: left;    
+}
+
+main table .login label{
+    color: var(--headerBkColor);
+    font-size: 15px;
+    margin: 2px;
+}
+
+main table .login input{
+    background-color: var(--inputBkColor);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+main form .btn input{
+    padding: 10px;
+    background-color: var(--headerBkColor);
+    color: var(--headerColor);
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: var(--transition);
+}
+
+main form .btn input:hover{
+    padding: 10px;
+    background-color: var(--buttonHover);
+    color: var(--headerColor);
+    border: none;   
+    cursor: pointer;
+    transition: var(--transition);
+    transform: var(--buttonTransform);
+}
