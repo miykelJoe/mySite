@@ -14,8 +14,8 @@
   --inputBkColor: hsl(0, 0%, 98%);
 
   /* ANIMATION */
-  --buttonTransform: scale(0.97);
-  --transition: .3s;
+  --buttonTransform: scale(0.98);
+  --transition: .2s;
 }
 
 body{
@@ -43,6 +43,7 @@ body{
   header #navigations ul a{
       text-decoration: none;
       border: solid 1px transparent;
+      font-size: clamp(.6rem, 2.5vw, 1.3rem);
       margin: 2px;
       transition: var(--transition);
       color: var(--headerColor);

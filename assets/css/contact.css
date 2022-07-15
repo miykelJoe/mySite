@@ -14,25 +14,28 @@ main {
 main form{
     background-color: var(--contentBoxColor);
     box-shadow: 0px 0px 20px 0px var(--headerColor);
+    width: min(500px, 70%);
+    
     display: flex;
     flex-flow: column;
-    border-radius: 10px;
+    border-radius: .8em;
     align-items: center;
     margin-top: 10%;
-    padding: 20px;
+    padding: 1.8em;
 }
 
 main form h1{
   color: var(--headerBkColor);
   margin-bottom: 20px;
+  font-size: clamp(.8rem, 5vw, 3rem);
 }
 
 main form table{
-    border-spacing: 10px;
+    border-spacing: .5em;
 }
 
 main form table tr th{
-    font-size: 15px;
+  font-size: clamp(.5rem, 3vw, 1.8rem);
     color: var(--headerBkColor);
     text-align: right;
 }
@@ -40,8 +43,9 @@ main form table tr th{
 main form table tr td input{
   background-color: var(--inputBkColor);
   width: 100%;
-  padding: 6px;
-  border-radius: 5px;
+  font-size: clamp(.4rem, 3vw, 1.8rem);
+  padding: .3em;
+  border-radius: .4em;
   border: none;
   outline: none;
 }
@@ -49,9 +53,10 @@ main form table tr td input{
 main form table tr textarea{
   background-color: var(--inputBkColor);
   width: 100%;
-  height: 80px;
-  border-radius: 5px;
-  padding: 5px;
+  height: 6em;
+  font-size: clamp(.4rem, 3vw, 1.8rem);
+  border-radius: .4em;
+  padding: .3em;
   border: none;
   outline: none;
 }
@@ -59,18 +64,18 @@ main form table tr textarea{
 main form input.btn{
   background-color: var(--headerBkColor);
   color: var(--headerColor);
-  padding: 10px;
+  padding: .6rem 1rem;
   border: none;
-  border-radius: 10px;
+  border-radius: .8em;
   transition: var(--transition);
 }
 
 main form input.btn:hover{
   background-color: var(--buttonHover);
   cursor: pointer;
-  padding: 10px;
+  padding: .6rem 1rem;
   border: none;
-  border-radius: 10px;
+  border-radius: .8em;
   transition: var(--transition);
   transform: var(--buttonTransform);
 }

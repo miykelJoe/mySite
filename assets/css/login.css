@@ -17,16 +17,17 @@ main form{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 1em;
+    border-radius: 1.5em;
 }
     
 main form h1{
         display: flex;    
         color: var(--headerBkColor);
+        font-size: clamp(.81rem, 5vw, 2.5rem);
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;        
+        margin-bottom: .8em;        
     }
 
 main table{    
@@ -34,13 +35,14 @@ main table{
 }
     
 main table .login{
-    text-align: left;    
+    text-align: left;
+    width: 100%;
 }
 
 main table .login label{
     color: var(--headerBkColor);
-    font-size: 15px;
-    margin: 2px;
+    font-size: clamp(.3rem, 3vw, 1.3rem);
+    margin: .2em;
 }
 
 main table .login input{
@@ -48,16 +50,18 @@ main table .login input{
     border: none;
     outline: none;
     border-radius: 3px;
-    padding: 6px;
+    font-size: clamp(.28rem, 2.6vw, 1.1rem);
+    padding: .6em;
 }
 
 main form .btn input{
     padding: 10px;
     background-color: var(--headerBkColor);
     color: var(--headerColor);
+    font-size: clamp(.4rem, 2.6vw, 1.3rem);
     border: none;
-    border-radius: 10px;
-    margin: 20px 0;
+    border-radius: .8em;
+    margin: 1.8em 0;
     transition: var(--transition);
 }
 

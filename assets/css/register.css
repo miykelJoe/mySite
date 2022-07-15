@@ -24,6 +24,7 @@ main form{
 
 main form h1{
     color: var(--headerBkColor);
+    font-size: clamp(.3rem, 6.5vw, 3rem);
 }
 
 main form table{
@@ -37,13 +38,14 @@ main form #heading{
 
 main form table tr th,
 main form table tr td{
-    font-size: 14px;
+    font-size: clamp(.6rem, 3vw, 1.8rem);
     padding: 2px;
 }
 
 main form table tr td input{
     background-color: var(--inputBkColor);
     color: var(--buttonHover);
+    font-size: clamp(.5rem, 3vw, 1.8rem);
     padding: 8px;
     border-radius: 10px;
     border: none;
@@ -60,6 +62,7 @@ main form table tr th label{
 main form table tr td select{
     background-color: var(--inputBkColor);
     color: var(--buttonHover);
+    font-size: clamp(.6rem, 3vw, 1.8rem);
     padding: 8px;
     border-radius: 10px;
     border: none;
@@ -76,6 +79,7 @@ main form .btn{
 main form .btn #btn{
     background-color: var(--headerBkColor);
     color: var(--headerColor);
+    font-size: clamp(.5rem, 3vw, 1.3rem);
     padding: 10px;
     border-radius: 10px;
     border: none;
